@@ -4,7 +4,7 @@
 - hosts: tomcats
   gather_facts: true
   tasks:
-#    - debug: var=hostvars[inventory_hostname]['ansible_env'].SSH_CONNECTION.split(' ')[2]
+
     - name: Instala Zabbix
       apt: name=zabbix-agent state=present
     - name: Configura Zabbix
